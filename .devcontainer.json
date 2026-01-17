@@ -7,7 +7,8 @@
     "remoteEnv": {
         // Put things that allow it in the persistent cache
         "UV_CACHE_DIR": "/cache/uv",
-        "UV_PYTHON_CACHE_DIR": "/cache/uv-python"
+        "UV_PYTHON_CACHE_DIR": "/cache/uv-python",
+        "UV_LINK_MODE": "copy"
     },
     // Create the config folder for the user modifiable terminal-config
     "initializeCommand": "mkdir -p ${localEnv:HOME}/.config/terminal-config",
