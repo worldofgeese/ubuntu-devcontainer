@@ -34,8 +34,12 @@
                 "astral-sh.ty",
                 "ms-python.python",
                 "ms-python.debugpy",
-                "ms-ossdata.vscode-pgsql"
+                "ms-ossdata.vscode-pgsql",
+                "Upstash.context7-mcp"
             ]
         }
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/node:1": {}
     }
 }
