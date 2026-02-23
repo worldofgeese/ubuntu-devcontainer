@@ -1,6 +1,6 @@
 # The devcontainer should use the developer target and run as root with podman
 # or docker with user namespaces.
-FROM ubuntu:noble-20260113
+FROM ubuntu:noble-20260210.1
 
 # Add any system dependencies for the developer/build environment here
 RUN apt-get update && \
@@ -45,4 +45,4 @@ RUN /root/terminal-config/ensure-user-terminal-config.sh && \
 
 # Install uv using the official image
 # See https://docs.astral.sh/uv/guides/integration/docker/#installing-uv
-COPY --from=ghcr.io/astral-sh/uv:0.9 /uv /uvx /bin/
+COPY --from=ghcr.io/astral-sh/uv:0.10 /uv /uvx /bin/
